@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+ <div class="container">
+
+     <h1 id="title">Survey From</h1>
+     <p class="dsec">Thank you for taking the time to help us improve the platform</p>
+     <div id="form">
+       
+      <form id="survey-form">
+
+        <label for="name">Name
+            <br>
+            <input id="name" type="text" required placeholder="Enter your Name">
+
+        </label>
+         <br>
+        
+
+        <label for="email">Email
+            <br>
+            <input id="email" type="email" placeholder="Enter Email" required>
+        </label>
+        
+        <br>
+        <label for="age">Age(optional)
+            <br>
+            
+            <input id="age" type="number" min="16" max="100" placeholder="Age" >
+        
+        </label>
+        
+
+        
+        
+        
+        
+        <label for="role">
+        <p>Which option best describes your current role?</p>
+            
+            <select id="role" rows="3" cols="5" >
+                <option>Select Current Role</option>
+                <option>Student</option>
+                <option>Full time job</option>
+                <option>Full time leraner</option>
+                <option>Other</option>
+            </select>
+        </label>
+        
+        <br>
+
+        <label id="recmnd">
+            <p>Would you recommend freeCodeCamp to a friend?</p>
+            <input type="radio" value="definitely" name="recmnd" checked>Definitely
+            <input type="radio" value="maybe" name="recmnd" >Maybe
+            <input type="radio" value="Not Sure" name="recmnd" >Not Sure
+        </label>
+
+        <label for="feature">
+            <p>What is your favorite feature of freeCodeCamp?</p>
+                
+                <select id="role" rows="3" cols="5" >
+                    
+                    <option>Select an option</option>
+                    <option>Challenges</option>
+                    <option>Cummunity</option>
+                    <option>Open Source</option>
+                    
+                </select>
+            </label>
+
+            <p>What would you like to see improved? (Check all that apply)</p>
+                <label for="feature">
+                    <input type="checkbox" value="FrontEnd" checked> FrontEnd    
+                </label>
+
+                <label>
+                    <input type="checkbox" value="BackEnd"> FrontEnd    
+                </label>
+                  <label>
+                    <input type="checkbox" value="Data-Visualization"> Data Visualization    
+                </label>
+
+                  <label>
+                    <input type="checkbox" value="Video"> Video    
+                </label> 
+
+                <div id="commnets">
+                    <textarea id="comments" placeholder="Enter your comments" ></textarea>
+                </div>
+
+                <div id="submit">
+                    <button type="submit" value="submit" >Submit</button>
+                </div>
+
+            </div>
+
+
+ </div>
+
+                    
+
+
+    </form>
+</body>
+</html>
